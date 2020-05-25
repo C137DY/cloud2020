@@ -11,6 +11,6 @@ public class PaymentFallbackService implements PaymentHystrixService{
 
     @Override
     public String paymentInfo_timeout(Integer id) {
-        return "";
+        return "连接超时";
     }
 }

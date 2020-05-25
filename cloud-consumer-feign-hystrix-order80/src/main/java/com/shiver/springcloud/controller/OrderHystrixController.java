@@ -1,5 +1,6 @@
 package com.shiver.springcloud.controller;
 
+import cn.hutool.core.util.IdUtil;
 import com.netflix.hystrix.contrib.javanica.annotation.DefaultProperties;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
@@ -33,4 +34,5 @@ public class OrderHystrixController {
     public String paymentInfo_timeoutHandler(@PathVariable("id") Integer id){
         return "消费者80,对方支付系统繁忙";
     }
+
 }
